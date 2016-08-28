@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>theCapitalOf</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+<div class="score">
+    {{ context.score }}
+</div>
+<div class="mainBlock">
+    <div class="countryBlock">
+        <h1>The capital of {{ context.country }} is</h1>
+    </div>
+
+    <form action="{{ url_for('the_capital_of') }}" method="post">
+
+        <button type="submit" name="value" value="left" class="btn-link btn-link-left">
+            <div class="chooseBlock leftBlock">{{ context.capital1 }}</div>
+        </button>
+
+        <button type="submit" name="value" value="right" class="btn-link btn-link-right">
+            <div class="chooseBlock rightBlock">{{ context.capital2 }} </div>
+        </button>
+
+    </form>
+
+
+    {#    {% with messages = get_flashed_messages() %}#}
+    {#        {% if messages %}#}
+    {#            {% for message in messages %}#}
+    {#                <div class="alert alert-warning alert-dismissable" role="alert">#}
+    {#                    <button type="button" class="close" data-dismiss="alert" aria-label="close">#}
+    {#                        <span aria-hidden="true">&times;</span>#}
+    {#                    </button>#}
+    {#                    {{ message }}#}
+    {#                </div>#}
+    {#            {% endfor %}#}
+    {#        {% endif %}#}
+    {#    {% endwith %}#}
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gameover</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"/>
+</head>
+<body>
+    <div class="gameOverBlock">
+        <div style="margin: 2vh;">"THE CAPITAL OF"</div>
+        <div style="margin: 2vh; margin-top: 8vh; margin-bottom: 8vh;">
+            GAME OVER <br> SCORE: {{ score }}
+        </div>
+        <a href="{{ url_for('newgame') }}">NEW GAME</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+.mainBlock {
+    width: 100%;
+    margin-top: 30vh;
+    position: relative;
+    color: ghostwhite;
+}
+
+.countryBlock {
+    background-color: rgba(46, 139, 87, 0.7);
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.chooseBlock {
+    width: 50vw;
+    padding: 0;
+    text-align: center;
+    font-family: inherit;
+    font-size: 30pt;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+
+}
+
+.leftBlock {
+    background-color: rgba(137, 64, 87, 0.7);
+    float: left;
+}
+
+.rightBlock {
+    background-color: rgba(132, 95, 168, 0.7);
+    float: right;
+}
+
+.btn-link {
+    border: none;
+    outline: none;
+    background: none;
+    color: ghostwhite;
+    padding: 0;
+    margin: 0;
+
+}
+
+.btn-link-left {
+    float: left;
+}
+
+.btn-link-right {
+    float: right;
+}
+
+.score {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 70vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(63, 63, 63, 0.76);
+}
+
+.gameOverBlock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 8vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(63, 63, 63, 0.76);
+}
